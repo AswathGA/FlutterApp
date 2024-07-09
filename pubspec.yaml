@@ -1,0 +1,86 @@
+name: snappoo
+description: A new Flutter project.
+
+publish_to: 'none'
+
+
+version: 1.0.2+7
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  carousel_slider: ^4.2.1
+  shared_preferences: ^2.0.15
+  permission_handler: ^10.2.0
+  photo_view: ^0.14.0
+  image_picker: ^0.8.6
+  just_the_tooltip: ^0.0.12
+  flutter_svg: ^2.0.1
+  get: ^4.6.5
+  camera: ^0.10.3
+  tflite_flutter: ^0.9.0
+  tflite_flutter_helper:
+    git:
+      url: https://github.com/elephantum/tflite_flutter_helper.git
+      ref: a7d7a59a33f7cffa0a2a12ab05625807622cc97a
+  flutter_animated_dialog: ^2.0.1
+  amplitude_flutter: ^3.13.0
+  google_mobile_ads: ^2.3.0
+  gallery_saver: ^2.3.2
+  native_device_orientation: ^1.1.4
+  firebase_storage: ^11.0.10
+  firebase_core: ^2.4.1
+  firebase_database: ^10.0.9
+  firebase_auth: ^4.2.6
+  firebase_in_app_messaging: ^0.7.0+10
+  device_info_plus: ^8.0.0
+  cached_network_image: ^3.2.3
+  url_launcher: ^6.1.7
+  flutter_vector_icons: ^2.0.0
+  package_info_plus: ^3.0.2
+  connectivity_plus: ^3.0.2
+  google_sign_in: ^5.4.3
+  flutter_typeahead: ^4.1.1
+  sign_in_with_apple: ^4.3.0
+
+  #Can not upgrade due to version solving failed
+  intl: ^0.17.0
+  image: ^3.0.2
+  share_plus: ^6.3.1
+
+dependency_overrides:
+  camera: ^0.10.1
+  ffi: ^2.0.1
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/logo/
+    - assets/icons/
+    - assets/lottie/
+    - assets/tflite/
+    - assets/json/
+
+
+  fonts:
+    - family: AllRoundGothicSemi
+      fonts:
+        - asset: assets/fonts/all_round_gothic.ttf
+    - family: AllRoundGothic
+      fonts:
+        - asset: assets/fonts/allroundgothic-semi.otf
+    - family: IBMPlex
+      fonts:
+        - asset: assets/fonts/ibm_plex.ttf
